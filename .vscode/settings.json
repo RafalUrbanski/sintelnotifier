@@ -1,0 +1,8 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/3fbd8827-36d4-4362-a0fb-9bcf0636016b/resourceGroups/appsvc_rg_linux_centralus/providers/Microsoft.Web/sites/sintelnotifier",
+    "appService.deploySubpath": "",
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        "node_modules{,/**}"
+    ]
+}
