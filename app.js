@@ -50,7 +50,7 @@ mediaLibraryNsp.on("connection", function (socket) {
         var assetName = data.assetName;
         console.log(`Asset: ${assetName} for client: ${clientId} has been uploaded`);
 
-        // mediaLibraryNsp.to(clientId).emit("asset uploaded", assetName); //To everyone
+        // mediaLibraryNsp.to(clientId).emit("asset uploaded", assetName); //Send to everyone
         socket.to(clientId).emit("asset uploaded", assetName); //To everyone except sender
     });
 });
